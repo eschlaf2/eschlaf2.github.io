@@ -12,7 +12,7 @@
     function init() {
         // Example 1. This will loop 5 times, and has a callback function at the end.
         var callback = function() { document.getElementById('btn1').value = 'play'; }
-        mp1 = new MidiPlayer('Saved.mid', 'btn1', true, 5, callback);
+        mp1 = new MidiPlayer('play.midi', 'btn1', true, 5, callback);
         mp1.setDebugDiv('msg');
 
         // Example 2. This will not loop.
