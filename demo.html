@@ -17,6 +17,9 @@
 
         // Example 2. This will not loop.
         mp2 = new MidiPlayer('Bach_Badinerie.mid', 'btn2'); 
+        
+        // Example 3. This will not loop.
+        mp3 = new MidiPlayer('play.midi','btn3');
     }
 
     function doPlay(m, btn) {
@@ -53,6 +56,7 @@ Save.mid: <input type="button" value="play" id="btn1" onclick="doPlay(mp1, this)
 <br/>
 
 Bach.mid: <input type="button" value="play" id='btn2' onclick="doPlay(mp2, this);"/><br/><br/>
+play.midi: <input type="button" value="play" id='btn3' onclick="doPlay(mp3, this);"/><br/><br/>
 
 <div id='msg'></div>
 <input type="button" id='div_clear' style="display:none;" value="Clear Message" onclick="javascript: do_clear();"/>
